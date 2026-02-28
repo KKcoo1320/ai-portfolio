@@ -12,6 +12,8 @@ type Props = {
 };
 
 export function HeroSection({ name, tagline, jobTargets, intro, ctas }: Props) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
   return (
     <section id="hero" className="relative overflow-hidden px-4 pb-16 pt-16 md:pb-24 md:pt-24">
       <div className="grid-overlay absolute inset-0 -z-20 opacity-30" />
@@ -53,7 +55,7 @@ export function HeroSection({ name, tagline, jobTargets, intro, ctas }: Props) {
           <div className="hero-pop hero-pop-delay mx-auto w-full max-w-sm">
             <div className="relative overflow-hidden rounded-3xl border border-cyan-300/30 bg-slate-950/50 p-3 shadow-glow">
               <Image
-                src="/profile.png"
+                src={`${basePath}/profile.png`}
                 alt="Bozhi Wang avatar"
                 width={720}
                 height={960}
