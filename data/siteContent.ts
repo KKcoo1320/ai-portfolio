@@ -103,6 +103,24 @@ export const siteContent: Record<Language, SiteTranslation> = {
       title: "以往实习&项目",
       items: [
         {
+          title: "BorisForAI 智能机器人部署项目",
+          background:
+            "基于腾讯云 OpenClaw 与飞书生态，搭建可在真实办公场景运行的 AI 机器人 BorisForAI，打通模型能力与企业协作工具的落地链路。",
+          stack: ["Tencent Cloud OpenClaw", "Feishu Open Platform", "Webhook", "Prompt Engineering", "API Debugging", "Agent Workflow"],
+          role:
+            "担任 AI 产品负责人，设计系统架构与对话流转机制，完成飞书机器人配置、消息监听回传链路与提示词策略优化，并解决接口连通性与权限调试问题。",
+          impact: ["成功上线可在线运行机器人", "实现消息到模型调用闭环", "提升回复稳定性与可读性", "沉淀可复用 Agent 部署流程"]
+        },
+        {
+          title: "个人品牌网站（AIGC 协作开发）",
+          background:
+            "从 0 到 1 构建结构化个人品牌网站，以产品化表达替代简历式罗列，并验证 AIGC 工具在前端开发与内容生产中的生产力价值。",
+          stack: ["Next.js", "TailwindCSS", "GitHub Pages", "GitHub Actions", "Codex", "SEO Optimization"],
+          role:
+            "负责信息架构、前端实现与视觉统一，设计 About / Projects / Skills / AI 探索模块，完成响应式适配、自动化部署与性能优化。",
+          impact: ["成功上线可公开访问网站", "形成模块化可迭代内容体系", "信息传达效率显著提升", "页面搭建效率提升约 40%"]
+        },
+        {
           title: "《余时者》AI 动画内容项目",
           background:
             "2026年2月11日至今，围绕“时间量化生存”的末日科幻设定，推进原创动画项目《余时者》的产品化与可规模化内容生产。",
@@ -190,10 +208,22 @@ export const siteContent: Record<Language, SiteTranslation> = {
       title: "成长时间线",
       items: [
         {
+          period: "2026.03 - 至今 | 腾讯云/飞书",
+          title: "AI 产品负责人：BorisForAI 智能机器人部署",
+          subtitle: "OpenClaw + 飞书生态",
+          summary: "完成机器人系统架构、模型调用链路与飞书集成，打通云端模型能力到真实办公场景的落地闭环。"
+        },
+        {
           period: "2026.02 - 至今 | 远程/纽约",
           title: "项目经理：《余时者》AI 动画内容项目",
           subtitle: "原创末日科幻动画 IP",
           summary: "统筹 PRD、世界观、分镜提示词体系与动画制作标准，推动 AIGC 与动画流程结合并建设商业化内容基础。"
+        },
+        {
+          period: "2026.01 - 至今 | 线上",
+          title: "个人网站：产品化表达与 AIGC 协作开发",
+          subtitle: "个人品牌与技术表达平台",
+          summary: "从零完成信息架构、前端开发与自动化部署，验证 AI 辅助开发在真实项目中的效率价值。"
         },
         {
           period: "2025.08 - 2026.01 | 纽约",
@@ -281,6 +311,33 @@ export const siteContent: Record<Language, SiteTranslation> = {
       title: "Selected Projects",
       items: [
         {
+          title: "BorisForAI Intelligent Bot Deployment",
+          background:
+            "Built an office-ready AI bot based on Tencent Cloud OpenClaw and Feishu ecosystem to validate end-to-end model integration in real collaboration workflows.",
+          stack: ["Tencent Cloud OpenClaw", "Feishu Open Platform", "Webhook", "Prompt Engineering", "API Debugging", "Agent Workflow"],
+          role:
+            "As AI Product Lead, designed system architecture and response flow, implemented Feishu bot integration, and optimized prompt strategy and deployment stability.",
+          impact: ["Successfully launched an online AI bot", "Closed loop from user message to model response", "Improved response reliability/readability", "Created reusable deployment playbook"]
+        },
+        {
+          title: "Personal Branding Website (AIGC Co-development)",
+          background:
+            "Built a structured personal-brand site from scratch to replace resume-style listing with productized storytelling while validating AI productivity in frontend delivery.",
+          stack: ["Next.js", "TailwindCSS", "GitHub Pages", "GitHub Actions", "Codex", "SEO Optimization"],
+          role:
+            "Owned architecture, frontend implementation, and visual direction; shipped responsive layout, automated deployment pipeline, and baseline SEO/performance optimization.",
+          impact: ["Launched publicly accessible site", "Established modular and iterable content system", "Higher information delivery efficiency", "About 40% faster page-building workflow"]
+        },
+        {
+          title: "\"Yushizhe\" AI Animation Content Project",
+          background:
+            "Since Feb 11, 2026, led an original post-apocalyptic sci-fi animation initiative focused on scalable AI-assisted content production.",
+          stack: ["ChatGPT", "Seedance 2.0", "AIGC Workflow", "PRD", "Storyboard Pipeline", "Prompt Engineering"],
+          role:
+            "As project manager, led product planning and project governance, including PRD iterations, worldbuilding, storyboard generation process, and production standards.",
+          impact: ["Built full content-production framework", "Closed loop from idea to script delivery", "Improved creation throughput", "Reduced cross-team production overhead"]
+        },
+        {
           title: "Ad Bidding Optimization Research",
           background:
             "Conducted at NYU Courant to improve bidding efficiency and ROI under volatile ad auction conditions.",
@@ -306,6 +363,15 @@ export const siteContent: Record<Language, SiteTranslation> = {
           role:
             "Owned analysis reporting, anomaly diagnosis, user profiling, dashboard design, and staged rollout strategy.",
           impact: ["Data consistency/accuracy +30%", "Data authenticity +45%", "Decision efficiency +20%", "CTR +15%, tracking validity +30%"]
+        },
+        {
+          title: "Schindler IoT Data Analytics Internship",
+          background:
+            "Improved elevator maintenance and warranty analytics process to shift from manual reporting to data-driven operational decisions.",
+          stack: ["SQL", "ETL Pipeline", "Excel (Vlookup/Sumif)", "Linear Regression", "IoT Monitoring"],
+          role:
+            "Built SQL + ETL workflows, monitored 100+ elevators, cleaned 20K maintenance records, and developed high-risk elevator identification model.",
+          impact: ["Data processing efficiency +30%", "Renewal rate +25%", "Maintenance cost -15%", "Data utilization +25%"]
         }
       ]
     },
@@ -350,22 +416,37 @@ export const siteContent: Record<Language, SiteTranslation> = {
       title: "Experience Timeline",
       items: [
         {
-          period: "Jan 2024 - Jan 2026 | New York",
-          title: "New York University, M.S. in Information Systems",
-          subtitle: "Courant Institute & Stern School of Business",
-          summary: "Core training in algorithms, real-time big data, database design, ML, and distributed/cloud systems."
+          period: "Mar 2026 - Present | Tencent Cloud / Feishu",
+          title: "AI Product Lead: BorisForAI Bot Deployment",
+          subtitle: "OpenClaw + Feishu Ecosystem",
+          summary:
+            "Delivered architecture, model invocation pipeline, and bot integration to operationalize AI assistant workflows in real office collaboration scenarios."
         },
         {
-          period: "Aug 2019 - May 2023 | Columbus",
-          title: "The Ohio State University, B.S. in Information Systems",
-          subtitle: "Fisher College of Business",
-          summary: "Built strong foundations in data systems, networking, OS, statistics, DevOps, and machine learning."
+          period: "Feb 2026 - Present | Remote/New York",
+          title: "Project Manager: \"Yushizhe\" AI Animation Project",
+          subtitle: "Original Post-apocalyptic Sci-Fi IP",
+          summary:
+            "Led PRD iterations, worldbuilding, storyboard prompt standards, and AI-assisted content workflows to build a scalable animation production framework."
+        },
+        {
+          period: "Jan 2026 - Present | Online",
+          title: "Personal Website: Productized Narrative + AIGC Co-development",
+          subtitle: "Personal Brand & Capability Showcase",
+          summary:
+            "Designed and built a modular personal site with responsive UI, automated deployment, and AI-assisted development workflow for faster iteration."
         },
         {
           period: "Aug 2025 - Jan 2026 | New York",
           title: "Project Lead: AI Chatbot",
           subtitle: "NYU Courant & Cadillac Group",
           summary: "Delivered an end-to-end RAG + Agent workflow from intent understanding to database-enhanced response generation."
+        },
+        {
+          period: "Jan 2024 - Jan 2026 | New York",
+          title: "New York University, M.S. in Information Systems",
+          subtitle: "Courant Institute & Stern School of Business",
+          summary: "Core training in algorithms, real-time big data, database design, ML, and distributed/cloud systems."
         },
         {
           period: "Jan 2024 - May 2025 | New York",
@@ -384,6 +465,12 @@ export const siteContent: Record<Language, SiteTranslation> = {
           title: "Data Analyst Intern",
           subtitle: "Schindler China, IoT Business Unit",
           summary: "Built SQL + ETL pipelines and risk models for maintenance analytics, improving efficiency and reducing cost."
+        },
+        {
+          period: "Aug 2019 - May 2023 | Columbus",
+          title: "The Ohio State University, B.S. in Information Systems",
+          subtitle: "Fisher College of Business",
+          summary: "Built strong foundations in data systems, networking, OS, statistics, DevOps, and machine learning."
         }
       ]
     },
